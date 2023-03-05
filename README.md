@@ -1,7 +1,8 @@
 # limg
-Conversor de imagem para o formato L-IMG.
-L-IMG é um formato de desenvolvido por Luiz Fernando Becher de Araujo para 
-o trabalho extra da disciplina de Processamento de Imagens Digitais.
+
+Conversor de imagem para o formato L-IMG. L-IMG é um formato de 
+imagem desenvolvido por Luiz Fernando Becher de Araujo para o 
+trabalho extra da disciplina de Processamento de Imagens Digitais.
 
 # Especificação do formato L-IMG
 
