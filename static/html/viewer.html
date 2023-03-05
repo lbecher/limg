@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <title>L-IMG: Viewer</title>
+    </head>
+    <body style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center;">
+        <canvas id="canvas" width="{2}" height="{3}" style="max-height: 100%;"></canvas>
+        <script type="text/javascript">
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const pixels = new Uint8ClampedArray({1});
+            const imageData = new ImageData(pixels, {2}, {3});
+            ctx.putImageData(imageData, 0, 0);
+        </script>
+    </body>
+</html>
