@@ -57,7 +57,7 @@ pub async fn converter(mut payload: Multipart) -> Result<HttpResponse, Error> {
         }
     }
 
-    let temp_file_path = format!("temp/{}.{}", std::process::id(), extension.as_str());
+    let temp_file_path = format!("{}/img_{}.{}", std::env::temp_dir().display(), std::process::id(), extension.as_str());
 
     std::fs::write(temp_file_path.as_str(), img_data).unwrap();
 

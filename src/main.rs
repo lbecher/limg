@@ -1,4 +1,3 @@
-use std::env;
 use actix_files::Files;
 use actix_web::{HttpServer, web, App};
 
@@ -9,8 +8,6 @@ use routes::viewer::viewer;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    let args: Vec<String> = env::args().collect();
-
     HttpServer::new(|| {
         App::new()
             .route("/", web::get().to(open))
@@ -18,8 +15,8 @@ async fn main() -> std::io::Result<()> {
             .service(viewer)
             .service(Files::new("/static", "./static").show_files_listing())
     })
-    .bind(args.get(1).expect("Argumento faltando!"))
-    .expect("Porta ocupada!")
+    .bind("localhost:8080")
+    .unwrap()
     .run()
     .await
 }

@@ -4,14 +4,17 @@ Conversor de imagem para o formato L-IMG. L-IMG é um formato de
 imagem desenvolvido por Luiz Fernando Becher de Araujo para o 
 trabalho extra da disciplina de Processamento de Imagens Digitais.
 
-# Como executar
+# Como compilar e executar
 
-Certifique-se de ter o compilador do Rust instalado: [Install Rust](https://www.rust-lang.org/tools/install).
+Certifique-se de ter o compilador do Rust instalado: [Instale o Rust](https://www.rust-lang.org/tools/install).
 
 Depois, execute o comando abaixo na raiz do projeto:
+
 ```
-cargo run -r -- localhost:8080
+cargo run -r
 ```
+
+Por fim, abra a interface da aplicação em [http://localhost:8080](http://localhost:8080).
 
 # Especificação do formato L-IMG
 
