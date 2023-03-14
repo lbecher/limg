@@ -21,6 +21,8 @@ No Linux:
 ./run.sh
 ```
 
+Depois, abra a interface da aplicação em [http://localhost:8080](http://localhost:8080).
+
 # Como compilar e executar
 
 Certifique-se de ter o compilador do Rust instalado: [Instale o Rust](https://www.rust-lang.org/tools/install).
