@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "http://localhost:8080"
-echo "O servidor web está em execução..."
+echo "Executando..."
 ./bin/limg
 echo "Terminando..."

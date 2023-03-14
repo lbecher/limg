@@ -1,8 +1,25 @@
-# limg
+# L-IMG
 
 Conversor de imagem para o formato L-IMG. L-IMG é um formato de 
 imagem desenvolvido por Luiz Fernando Becher de Araujo para o 
 trabalho extra da disciplina de Processamento de Imagens Digitais.
+
+# Como executar
+
+Execute um dos comandos abaixo na raiz do projeto, de acordo com
+o seu sistema operacional.
+
+No Windows:
+
+```
+.\run.bat
+```
+
+No Linux:
+
+```
+./run.sh
+```
 
 # Como compilar e executar
 
@@ -29,4 +46,4 @@ Por fim, abra a interface da aplicação em [http://localhost:8080](http://local
 | 15 | - | Vetor de pixels. |
 
 Cada pixel possui 2 bytes e as cores são ordenadas na ordem vermelho, verde e azul.
-A orientação dos pixels é de cima para baixo e da esquerda para direita.
+A orientação dos pixels é da esquerda para direita e de cima para baixo.
